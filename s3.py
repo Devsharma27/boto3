@@ -20,7 +20,8 @@ for bucket in s3.buckets.all():
 # s3.Bucket('s3boto3s3bucket').put_object(Key='dev1.jpg', Body=data)
 # print("object has uploaded")
 
-s3.Bucket('s3boto3s3bucket').upload_file('C:\\Users\devsh\s3-boto3\dev1.jpg', 'dev1.jpg')
+# s3.Bucket('s3boto3s3bucket').upload_file('C:\\Users\devsh\s3-boto3\dev1.jpg', 'dev1.jpg')
+s3.Bucket('s3boto3s3bucket').upload_file('dev1.jpg', 'dev1.jpg')
 
 # # Listing Amazon S3 Bucket objects/files
 s3_bucket = s3.Bucket('s3boto3s3bucket')
